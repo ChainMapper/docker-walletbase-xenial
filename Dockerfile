@@ -8,4 +8,5 @@ RUN apt-get update \
     && add-apt-repository ppa:bitcoin/bitcoin \
     && apt-get update \
     && apt-get -y install libdb4.8-dev libdb4.8++-dev unzip \
-    && apt-get -y install wget libzmq5 libminiupnpc10
+    && apt-get -y install wget libzmq5 libminiupnpc10 \
+    && apt-get install -y libcap-dev libseccomp-dev
